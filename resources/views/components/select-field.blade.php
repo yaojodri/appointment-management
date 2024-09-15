@@ -1,6 +1,4 @@
-<div>
-    <!-- Life is available only in the present moment. - Thich Nhat Hanh -->
-</div>
+
 
 <div class="mb-3">
     <label for="{{$name}}" class="form-label">{{$label}}</label>

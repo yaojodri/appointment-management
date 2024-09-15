@@ -1,9 +1,4 @@
-<div>
-    <!-- Breathing in, I calm body and mind. Breathing out, I smile. - Thich Nhat Hanh -->
-</div>
-<div>
-    <!-- Be present above all else. - Naval Ravikant -->
-</div>
+
 
 @extends('layout.master')
 

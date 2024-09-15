@@ -1,6 +1,4 @@
-<div>
-    <!-- Let all your things have their places; let each part of your business have its time. - Benjamin Franklin -->
-</div>
+
 
 <form class="container-sm" action="{{$action}}" method="POST" enctype="multipart/form-data">
     <div class="row g-3">
@@ -24,5 +22,6 @@
     @endisset
     
     <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="{{ url()->previous() }}" class="btn btn-secondary">Back</a>
 </form>
 

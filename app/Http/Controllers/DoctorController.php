@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Doctor;
+use App\Mail\DoctorMail;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Mail;
@@ -39,8 +40,8 @@ class DoctorController extends Controller
 
        
 
-        Doctor::create($data); 
-        // Mail::to($doctor->mail)->send(DoctorMail($doctor));      
+        $doctor =  Doctor::create($data); 
+         Mail::to($doctor->email)->send(new DoctorMail($doctor));      
         return redirect()->route('doctors.index')->with('alertMessage'," {$data['name']} added successfully and email sent");
 
 

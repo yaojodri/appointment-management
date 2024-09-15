@@ -1,10 +1,4 @@
-<div>
-    <!-- It is never too late to be what you might have been. - George Eliot -->
-</div>
 
-<div>
-    <!-- Order your soul. Reduce your wants. - Augustine -->
-</div>
 
 @extends('layout.master')
 @section('title', 'List of Users')
@@ -48,7 +42,7 @@
 <style>
     /* Custom styles for table headers */
     .th-custom {
-        padding: 0.5rem; /* Adjust this value as needed */
+        padding: 0.5rem; 
     }
 </style>
 @endsection

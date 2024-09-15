@@ -1,35 +1,3 @@
-<div>
-    <!-- Let all your things have their places; let each part of your business have its time. - Benjamin Franklin -->
-</div>
-
-    {{-- <div class="row g-3">
-        <div class=>
-            <label>Doctor's Name:</label>
-            <p>
-                {{$doctor->name}}
-            </p>
-        </div>
-        <div class=>
-            <label>Specialization:</label>
-            <p>
-                {{$doctor->specialization}}
-            </p>
-        </div>
-      
-    <div>
-        <label>Phone Number:</label>
-        <p>
-            {{$doctor->phone_number}}
-        </p>
-    </div>
-    <div>
-        <label>Email:</label>
-        <p>
-            {{$doctor->email}}
-        </p>
-    </div>
-   
- --}}
 
  <!DOCTYPE html>
 <html lang="en">

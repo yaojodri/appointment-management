@@ -17,9 +17,7 @@ Route::get('/register', function(Request $request) {
   return view('auth.register');
 })->name('register')->middleware('guest');
 Route::post('/register',[AuthController::class, 'register'])->name('auth.register')->middleware('guest');
-Route::get('/mail',function(){
-  Mail::to('test@test.com')->send(new WelcomeMessage());
-    });
+
 Route::get('/login',[AuthController::class, 'getLoginPage'])->name('auth.loginPage')->middleware('guest');
 Route::post('/login',[AuthController::class, 'authenticate'])->name('auth.login')->middleware('guest');
 Route::post('/logout',[AuthController::class, 'logout'])->name('auth.logout')->middleware('auth');

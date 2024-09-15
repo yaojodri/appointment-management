@@ -1,6 +1,4 @@
-<div>
-    <!-- It is not the man who has too little, but the man who craves more, that is poor. - Seneca -->
-</div>
+
 
 <form class="container-sm" action="{{$action}}" method="POST" >
     
@@ -23,6 +21,8 @@
     @endisset
     
     <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="{{ url()->previous() }}" class="btn btn-secondary">Back</a>
+
 </form>
 
 

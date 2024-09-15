@@ -24,7 +24,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Appointment Booking</a>
+            <a class="navbar-brand" href="#">Appointment Management</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,7 +58,13 @@
         <div class="d-flex justify-content-center mt-4">
             <a href="{{ route('appointments.index') }}" class="btn btn-warning btn-lg w-50 text-dark">Manage All</a>
         </div>
-        
+        @auth
+        <form action="{{route('auth.logout')}}" method="post">
+          @csrf
+          <button class="btn btn-success" type="submit">Logout</button>
+        </form>
+        @endauth
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,6 +1,4 @@
-<div>
-    <!-- Let all your things have their places; let each part of your business have its time. - Benjamin Franklin -->
-</div>
+
 
 @extends('layout.master')
 @section('title','List of Doctors')
@@ -44,9 +42,8 @@
 
 @section('styles')
 <style>
-    /* Custom styles for table headers */
     .th-custom {
-        padding: 0.5rem; /* Adjust this value as needed */
+        padding: 0.5rem; 
     }
 </style>
 @endsection

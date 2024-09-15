@@ -29,7 +29,7 @@ class AuthController extends Controller
         $user = User::create($field);
         Mail::to($user->email)->send(new WelcomeMessage($user));
 
-        //  return view('auth.login')
+         return view('auth.login');
         //  ->with('alertMessage',"Registration successfully")->with('type', 'success');
          
         
@@ -43,9 +43,7 @@ class AuthController extends Controller
         return view('auth.login');
     }
           
-    // public function superAdmin(){
-    //     return view('auth.superadminlogin');
-    // }
+   
 
     public function authenticate(Request $request) {
         $credentials = $request->validate([

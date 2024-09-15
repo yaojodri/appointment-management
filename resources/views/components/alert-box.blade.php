@@ -1,6 +1,4 @@
-<div>
-    <!-- Because you are alive, everything is possible. - Thich Nhat Hanh -->
-</div>
+
 @php
     $type = session('type') ? session('type') : 'success';
 @endphp

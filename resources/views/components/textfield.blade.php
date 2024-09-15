@@ -1,6 +1,4 @@
-<div>
-    <!-- Let all your things have their places; let each part of your business have its time. - Benjamin Franklin -->
-</div>
+
 
 @php
 if(!isset($value)){
@@ -13,4 +11,3 @@ if(!isset($value)){
     @error($name)<div class="invalid-feedback">{{$message}}</div>@enderror
 </div>
 
-{{-- value="{{old($name)}}" --}}

@@ -1,6 +1,4 @@
-<div>
-    <!-- Nothing worth having comes easy. - Theodore Roosevelt -->
-</div>
+
 <form class="container-sm" action="{{$action}}" method="POST">
     <x-textfield name="name" label="User Name" type="text" :value="$user->name" placeholder="Enter a user name" />
     <x-textfield name="email" label="User Email" type="email" :value="$user->email" placeholder="Enter a user email" />
@@ -28,4 +26,6 @@
     <x-select-field :options="$roles" name="role" label="Select Role" :value="$user->role"  />
     @csrf
     <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="{{ url()->previous() }}" class="btn btn-secondary">Back</a>
+
 </form>

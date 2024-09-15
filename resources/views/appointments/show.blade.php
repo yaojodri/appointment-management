@@ -1,42 +1,4 @@
-<div>
-    <!-- It is not the man who has too little, but the man who craves more, that is poor. - Seneca -->
-</div>
 
-{{-- <div class="row g-3">
-    <div class=>
-        <label>Patient's Name:</label>
-        <p>
-            {{$appointment->name}}
-        </p>
-    </div>
-    <div class=>
-        <label>Appointment Date:</label>
-        <p>
-            {{$appointment->appointment_date}}
-        </p>
-    </div>
-  
-<div>
-    <label>Appointment Time:</label>
-    <p>
-        {{$appointment->appointment_time}}
-    </p>
-</div>
-
-<div>
-    <label>Appointment Type:</label>
-    <p>
-        {{$appointment->appointment_type}}
-    </p>
-</div>
-<div>
-    <label>Doctor:</label>
-    <p>
-        {{$appointment->doctor->name}}
-    </p>
-</div>
-
- --}}
 
  <!DOCTYPE html>
 <html lang="en">
